@@ -21,7 +21,7 @@ func PrintTime(t time.Time) {
 	fmt.Println("Текущее время:", t.Format(time.RFC3339))
 }
 
-// Facade : точка входа в паттерн
+// Facade : точка входа в паттерн фасад
 func Facade() {
 	// Создаем экземпляр фасада
 	ntpFacade := &NTPFacade{}
