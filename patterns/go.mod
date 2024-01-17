@@ -1,4 +1,4 @@
-module github.com/Nahbox/L2-wb
+module github.com/Nahbox/L2-wb/patterns
 
 go 1.21.0
 
