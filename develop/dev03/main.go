@@ -4,7 +4,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"sort"
 	"strconv"
@@ -22,7 +21,7 @@ func main() {
 	flag.Parse()
 
 	// Чтение содержимого файла
-	content, err := ioutil.ReadFile(*inputFile)
+	content, err := os.ReadFile(*inputFile)
 	if err != nil {
 		fmt.Println("Ошибка при чтении файла:", err)
 		os.Exit(1)
