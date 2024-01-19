@@ -48,7 +48,8 @@ func GetTransport(transport string) (Transport, error) {
 	if transport == "Car" {
 		tf := CarFactory{}
 		return tf.CreateTransport(), nil
-	} else if transport == "Plane" {
+	}
+	if transport == "Plane" {
 		pf := PlaneFactory{}
 		return pf.CreateTransport(), nil
 	}
