@@ -42,7 +42,7 @@ func StrategyPattern() {
 	context := &CompressionContext{strategy: &GzipCompressionStrategy{}}
 
 	// Сжимаем файл с текущей стратегией
-	context.Compress("example.txt")
+	context.Compress("example1.txt")
 
 	// Переключаем стратегию на zip и сжимаем другой файл
 	context.SetCompressionStrategy(&ZipCompressionStrategy{})
